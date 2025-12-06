@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Showcase | Web Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.25rem 0;
+            font-size: 1.9rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 1.5rem auto 5rem auto;
+            background-color: #fff;
+            padding: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 6px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.25rem;
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        .intro {
+            font-size: 1rem;
+        }
+
+        .assignment-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0.5rem 0 0 0;
+        }
+
+        .assignment-list li {
+            margin: 0.4rem 0;
+        }
+
+        .assignment-list a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .assignment-list a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Disclaimer frame at the border of every page */
+        .disclaimer-border {
+            position: fixed;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-sizing: border-box;
+            border: 2px solid #c00;
+            z-index: 9999;
+        }
+
+        .disclaimer-text {
+            position: fixed;
+            left: 50%;
+            bottom: 4px;
+            transform: translateX(-50%);
+            background-color: #fff;
+            color: #c00;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #c00;
+            z-index: 10000;
+        }
+
+        footer {
+            max-width: 1100px;
+            margin: 0 auto 1rem auto;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            main {
+                margin: 1rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Disclaimer frame required on ALL published pages -->
+    <div class="disclaimer-border" aria-hidden="true"></div>
+    <div class="disclaimer-text">
+        This website is for a Web Technologies class, and no products or services are available for purchase.
+    </div>
+
+    <header>
+        <h1>Project Showcase</h1>
+        <p>Web Technologies • Selected Case Problems, Review Assignments  & Final E-Commerce Project</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#final-project">Final E-Commerce Website Project</a>
+    </nav>
+
+    <main>
+        <section id="intro" class="intro">
+            <h2>Welcome</h2>
+            <p>
+                This Project Showcase highlights my work for the Web Technologies course, including key
+                case problems, review assignments, and my Final E-Commerce Website Project- Headquarters Barbershop.
+                Each link below opens the corresponding page or activity used to practice HTML5, CSS, and
+                other front-end concepts.
+            </p>
+        </section>
+
+        <section id="assignments">
+            <h2>Assignment Showcase</h2>
+
+            <h3>T1 Case Problem 1: Jedds Tree Care (Module 1)</h3>
+            <ul class="assignment-list">
+                <!-- Update href with your correct file path once uploaded -->
+                <li><a href="t1_jedds_tree_care/jtc_services.html">View Jedds Tree Care Site</a></li>
+            </ul>
+            <p class="note">
+                Focus: Basic HTML structure, semantic markup, and external CSS linking.
+            </p>
+
+            <h3>T3 Review Assignment (Module 2)</h3>
+            <ul class="assignment-list">
+                <li><a href="t3_review_assignment/pc_specials.html">View T3 Review Assignment</a></li>
+            </ul>
+            <p class="note">
+                Focus: Working with typography, colors, images, and layout refinement.
+            </p>
+
+            <h3>T4 Case Problem 1: Save Your Fork (Module 2)</h3>
+            <ul class="assignment-list">
+                <li><a href="t4_save_your_fork/sf_torte.html">View Save Your Fork Site</a></li>
+            </ul>
+            <p class="note">
+                Focus: Multi-page site navigation and consistent styling.
+            </p>
+
+            <h3>T5 Review Assignment (Module 3)</h3>
+            <ul class="assignment-list">
+                <li><a href="t5_review_assignment/index.html">View T5 Review Assignment</a></li>
+            </ul>
+            <p class="note">
+                Focus: Page layout techniques and more advanced CSS.
+            </p>
+
+            <h3>T5 Case Problem 1: Golden Pulps (Module 3)</h3>
+            <ul class="assignment-list">
+                <li><a href="t5_golden_pulps/index.html">View Golden Pulps Site</a></li>
+            </ul>
+            <p class="note">
+                Focus: Applying CSS for branding, imagery, and responsive design elements.
+            </p>
+        </section>
+
+        <section id="final-project">
+            <h2>Final E-Commerce Website Project-Headquarters Barbershop</h2>
+            <p>
+                The Final E-Commerce Website Project demonstrates a complete, multi-page site for a
+                small business, incorporating HTML5, CSS, multimedia, forms, and JavaScript (where required).
+            </p>
+            <ul class="assignment-list">
+                <!-- Update this link to point to your completed final project home page -->
+                <li><a href="final_ecommerce_site/index.html">Enter the Final E-Commerce Website</a></li>
+            </ul>
+            <p class="note">
+                This site is integrated into the Project Showcase to provide a central hub for all major course work.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        Project Showcase • Web Technologies • Hosted on FSCJ student server
+    </footer>
+</body>
+</html>
