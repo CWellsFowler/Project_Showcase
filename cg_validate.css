@@ -1,0 +1,45 @@
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Case Problem 1
+
+   ACGIP Registration Validation Style Sheet
+   Author: Chatoya Wells
+   Date:   11/28/2025
+
+   Filename: cg_validate.css
+*/
+
+
+/* Validation Styles */
+
+/* Highlight ALL fields when they are focused */
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(245, 245, 140);
+}
+
+/* Valid fields: fnBox, lnBox, mailBox, phoneBox, idBox */
+#fnBox:focus:valid,
+#lnBox:focus:valid,
+#mailBox:focus:valid,
+#phoneBox:focus:valid,
+#idBox:focus:valid {
+    background-color: rgb(220, 255, 220);
+    background-image: url("cg_valid.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+/* Invalid fields: fnBox, lnBox, mailBox, phoneBox, idBox */
+#fnBox:focus:invalid,
+#lnBox:focus:invalid,
+#mailBox:focus:invalid,
+#phoneBox:focus:invalid,
+#idBox:focus:invalid {
+    background-color: rgb(255, 232, 232);
+    background-image: url("cg_invalid.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
